@@ -60,7 +60,15 @@ class Song
     song = self.new
     song.name = name
     song.artist_name = art_name
-    @@all << song
     song
   end
+
+  def self.new_from_filename(file)
+    art_name, name = file.split(" - ")
+    song = self.new
+    song.name = name
+    song.artist_name = art_name
+    @@all << song
+    song  end
+
 end
