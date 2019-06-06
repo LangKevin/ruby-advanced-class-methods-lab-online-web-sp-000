@@ -51,4 +51,12 @@ class Song
   def self.alphabetical
     @@all.sort! { |x,y| x.name.downcase <=> y.name.downcase }
   end
+
+  # describe '.new_from_filename' do
+  #   it 'initializes a song and artist_name based on the filename format' do
+  #     song = Song.new_from_filename("Thundercat - For Love I Come.mp3")
+  def new_from_filename(name)
+    artist, song = name.split(" - ")
+    
+  end  
 end
