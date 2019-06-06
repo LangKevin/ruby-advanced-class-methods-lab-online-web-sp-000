@@ -49,7 +49,6 @@ class Song
   end
 
   def self.alphabetical
-    # people.sort! { |a,b| a.last_name.downcase <=> b.last_name.downcase }
-    @@all.sort! { |a,b| a.name.downcase <=> b.name.downcase }
+    @@all.sort! { |x,y| x.name.downcase <=> y.name.downcase }
   end
 end
