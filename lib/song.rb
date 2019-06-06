@@ -50,6 +50,6 @@ class Song
 
   def self.alphabetical
     # people.sort! { |a,b| a.last_name.downcase <=> b.last_name.downcase }
-    @@all.sort! { |a,b| a.last_name.downcase <=> b.last_name.downcase }
+    @@all.sort! { |a,b| a.name.downcase <=> b.name.downcase }
   end
 end
