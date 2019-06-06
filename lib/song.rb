@@ -34,13 +34,18 @@ class Song
 
   def self.find_by_name(name)
     self.all.find{|song| song.name == name}
-    # if song == nil
-    #   false
-    # end
   end
 
   def save
     self.class.all << self
   end
+
+  def self.find_or_create_by_name(name)
+    song = find_by_name(name)
+    if song == nil
+      song = create_by_name(name)  
+    end 
+    song 
+  end  
 
 end
