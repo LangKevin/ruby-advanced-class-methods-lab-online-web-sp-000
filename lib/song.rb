@@ -9,7 +9,7 @@ class Song
   def initialize
 
   end
-  def self.create(name)
+  def self.create
     song = self.new
     @@all << song
   end
