@@ -59,7 +59,7 @@ class Song
     art_name, name = file.split(" - ")
     song = self.new
     song.name = name
-    artist_name = art_name
+    song.artist_name = art_name
     @@all << song
     song
   end
