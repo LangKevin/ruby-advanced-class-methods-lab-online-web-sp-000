@@ -57,6 +57,6 @@ class Song
   #     song = Song.new_from_filename("Thundercat - For Love I Come.mp3")
   def new_from_filename(name)
     artist, song = name.split(" - ")
-    
-  end  
+
+  end
 end
