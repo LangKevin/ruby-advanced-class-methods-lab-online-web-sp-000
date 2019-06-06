@@ -55,8 +55,12 @@ class Song
   # describe '.new_from_filename' do
   #   it 'initializes a song and artist_name based on the filename format' do
   #     song = Song.new_from_filename("Thundercat - For Love I Come.mp3")
-  def new_from_filename(name)
-    artist, song = name.split(" - ")
-
+  def new_from_filename(file)
+    artist, name = file.split(" - ")
+    song = self.new
+    song.name = name
+    song.artist = artist
+    @@all << song
+    song
   end
 end
