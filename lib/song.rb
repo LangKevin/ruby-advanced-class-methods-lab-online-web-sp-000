@@ -24,7 +24,6 @@ class Song
     song = self.new
     @name = name
     @@all << song
-    song
   end
 
   def self.all
