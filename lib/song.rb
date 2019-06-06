@@ -74,5 +74,5 @@ class Song
 
   def self.destroy(file)
      @@all = []  
-  end   
+  end
 end
