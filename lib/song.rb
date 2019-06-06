@@ -69,6 +69,7 @@ class Song
     song.name = name
     song.artist_name = art_name
     @@all << song
-    song  end
+    song
+  end
 
 end
